@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Горшенев](https://up.htmlacademy.ru/htmlcss/29/user/549945).
-* Наставник: [Малик Киров](https://up.htmlacademy.ru/htmlcss/29/user/17217).
+* Наставник: [Малик](https://up.htmlacademy.ru/htmlcss/29/user/17217).
 
 ---
 
