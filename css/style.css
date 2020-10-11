@@ -85,14 +85,13 @@ img {
 .user-basket a:active {
   border-bottom: 2px solid var(--light-pinkred);
 }
-h1 {
+.main-title {
   font-size: 55px;
   line-height: 55px;
 }
 
-}
 
-.button{
+.button {
   font: inherit;
   text-align: center;
   color: var(--basic-white);
@@ -102,6 +101,8 @@ h1 {
   border: none;
   border-radius: 3px;
 }
+
+
 
 .button-green {
   color: var(--basic-white);
@@ -147,8 +148,12 @@ h1 {
   font-size: 55px;
   line-height: 55px;
 }
+.carousel-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
 
-h3 {
+.features-title {
   font-size: 24px;
   line-height: 30px;
 }
