@@ -2,6 +2,7 @@
     --basic-white: #FFFFFF;
     --special-white: rgba(255, 255, 255, 0.3);
     --basic-black: #000000;
+    --special-black: rgba(0, 0, 0, 0.3);
     --basic-light-gray: #EEEEEE;
     --special-gray: #A6A6A6;
     --light-gray: #D5D5D5;
@@ -187,6 +188,43 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
+
+.catalog-list {
+  list-style: none;
+}
+
+.pagination-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--basic-light-gray);
+}
+
+.pagination-item a:hover {
+  background-color: var(--medium-gray);
+}
+
+.pagination-item a:focus {
+  color: var(--special-black);
+  background-color: var(--light-gray);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-light-gray);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
 .partnership-item{
   opacity: 0.2;
 }
@@ -208,7 +246,7 @@ img {
   font-size: 36px;
   line-height: 36px;
 }
-.footer-social ul {
+.social-list {
   list-style: none;
 }
 .social-button:hover,

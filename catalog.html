@@ -34,42 +34,54 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
           <!-- Здесь будет форма фильтра -->
       </section>
-      <section>
-        <h2>Список шаблонов</h2>
-          <ul>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-sedona.png" width="358" height="576" alt="sedona"></li>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-pink.png" width="358" height="576" alt="pink"></li>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-barbershop.png" width="358" height="576" alt="borodinski"></li>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-mishka.png" width="358" height="576" alt="mishka"></li>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-aplus.png" width="358" height="576" alt="aplus"></li>
-            <li><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img src="img/img-kvast.png" width="358" height="576" alt="kvast"></li>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image" src="img/img-sedona.png" width="358" height="576" alt="sedona"></li>
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image" src="img/img-pink.png" width="358" height="576" alt="pink"></li>
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image" src="img/img-barbershop.png" width="358" height="576" alt="borodinski"></li>
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image" src="img/img-mishka.png" width="358" height="576" alt="mishka"></li>
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image"  src="img/img-aplus.png" width="358" height="576" alt="aplus"></li>
+            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
+              <img class="catalog-item-image" src="img/img-kvast.png" width="358" height="576" alt="kvast"></li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
           </ul>
       </section>
    </main>
-   <footer>
-     <section>
-       <h2>Как нас найти</h2>
-       <p>NЁRDS DESIGN STUDIO</p>
-       <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-       <button type="button">Напишите нам</button>
-       <img src="img/map-marker 1.png" alt="marker">
-     </section>
-     <section>
-       <h2>Давайте дружить, это выгодно!</h2>
-       <p>Скидка 10% для друзей из социальных сетей.</p>
-       <ul>
-         <li><a href="#">Vk</a></li>
-         <li><a href="#">Fb</a></li>
-         <li><a href="#">Inst</a></li>
+    <footer class="page-footer main-footer">
+     <section class="footer-contacts">
+       <h2 class="visually-hidden">Как нас найти</h2>
+       <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
+       <p class="contacts-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.  <a class="footer-phone" href="tel: +78122757575"> +7 (812) 275-75-75</a></p>
+       <a class="button button-red" href="#">Напишите нам</a>
+       <img src="img/map-marker.png" alt="marker">
+      </section>
+      <section class="footer-social">
+       <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+       <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+       <ul class="social-list">
+         <li class="social-button">
+          <a href="#">Vk</a>
+         </li>
+         <li class="social-button">
+          <a href="#">Fb</a>
+         </li>
+         <li class="social-button">
+          <a href="#">Inst</a>
+         </li>
        </ul>
-     </section>
-   </footer>
+      </section>
+    </footer>
    <section>
   <h2>Напишите нам</h2>
   <!-- Здесь будет форма для связи -->
