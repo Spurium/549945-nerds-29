@@ -4,6 +4,7 @@
     --basic-black: #000000;
     --special-black: rgba(0, 0, 0, 0.3);
     --basic-light-gray: #EEEEEE;
+    --social-gray: #E1E1E1;
     --special-gray: #A6A6A6;
     --light-gray: #D5D5D5;
     --medium-gray: #DFDFDF;
@@ -149,8 +150,16 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.footer-contacts{
+  background: var(--basic-white) url(../img/map.png) no-repeat 100%;
+}
+
 .footer-phone {
   color: inherit;
+}
+.carousel-list{
+ list-style: none;
+
 }
 
 .carousel-title {
@@ -249,7 +258,16 @@ img {
 .social-list {
   list-style: none;
 }
-.social-button:hover,
+.social-button {
+    text-align: center;
+    width: 81px;
+    height: 81px;
+    background: var(--social-gray);
+    border-radius: 50%;
+}
+.social-button:hover{
+   background: var(--pink-red);
+}
 .social-button:focus {
-  background-color: var(--basic-white);
+   background: var(--dark-pink-red);
 }

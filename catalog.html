@@ -14,7 +14,7 @@
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
       </a>
       <div class="main-navigation-wrapper">
-        <div class="container">
+        <div class="main-container">
          <ul class="site-navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
@@ -37,18 +37,74 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
           <ul class="catalog-list">
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image" src="img/img-sedona.png" width="358" height="576" alt="sedona"></li>
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image" src="img/img-pink.png" width="358" height="576" alt="pink"></li>
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image" src="img/img-barbershop.png" width="358" height="576" alt="borodinski"></li>
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image" src="img/img-mishka.png" width="358" height="576" alt="mishka"></li>
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image"  src="img/img-aplus.png" width="358" height="576" alt="aplus"></li>
-            <li class="catalog-item"><span><img src="img/path.png" width="360" height="40" alt="path"></span>
-              <img class="catalog-item-image" src="img/img-kvast.png" width="358" height="576" alt="kvast"></li>
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image" src="img/img-sedona.jpg" width="358" height="576" alt="sedona">
+              <div class="preview">
+                <p class="preview-title">Sedona</p>
+                <p class="preview-subtitle">Информационный сайт для туристов</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+              </li>
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image" src="img/img-pink.jpg" width="358" height="576" alt="pink">
+              <div class="preview">
+                <p class="preview-title">Pink App</p>
+                <p class="preview-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image" src="img/img-barbershop.jpg" width="358" height="576" alt="borodinski">
+              <div class="preview">
+                <p class="preview-title">Barbershop</p>
+                <p class="preview-subtitle">Сайт салона красоты. Для мужчин, да.</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image" src="img/img-mishka.jpg" width="358" height="576" alt="mishka">
+              <div class="preview">
+                <p class="preview-title">MISHKA</p>
+                <p class="preview-subtitle">Интернет-магазин вязаных игрушек</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+
+            </li>
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image"  src="img/img-aplus.jpg" width="358" height="576" alt="aplus">
+              <div class="preview">
+                <p class="preview-title">A Plus</p>
+                <p class="preview-subtitle">Лендинг курсов повышения квалификации</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+            </li>
+            <li class="catalog-item">
+              <span>
+              <img src="img/browser.svg" width="360" height="40" alt="path">
+              </span>
+              <img class="catalog-item-image" src="img/img-kvast.jpg" width="358" height="576" alt="kvast">
+              <div class="preview">
+                <p class="preview-title">КВАСТ</p>
+                <p class="preview-subtitle">Промо-сайт производителя крафтового кваса</p>
+                <a class="button button-price" href="#">9 900 ₽</a>
+              </div>
+            </li>
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -60,24 +116,35 @@
    </main>
     <footer class="page-footer main-footer">
      <section class="footer-contacts">
+      <div class="footer-conteiner">
        <h2 class="visually-hidden">Как нас найти</h2>
        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
        <p class="contacts-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.  <a class="footer-phone" href="tel: +78122757575"> +7 (812) 275-75-75</a></p>
        <a class="button button-red" href="#">Напишите нам</a>
-       <img src="img/map-marker.png" alt="marker">
+       </div>
+       <img class="footer-marker" src="img/map-marker.png" width="231" height="190" alt="marker">
       </section>
       <section class="footer-social">
        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
        <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
        <ul class="social-list">
          <li class="social-button">
-          <a href="#">Vk</a>
+          <a href="#">Vk
+            <span class="visually-hidden">Vk</span>
+            <img src="img/vk-icon.svg" width="30" height="30" alt="Vk">
+          </a>
          </li>
          <li class="social-button">
-          <a href="#">Fb</a>
+          <a href="#">Fb
+          <span class="visually-hidden">Fb</span>
+          <img src="img/fb-icon.svg" width="30" height="30" alt="Fb">
+        </a>
          </li>
          <li class="social-button">
-          <a href="#">Inst</a>
+          <a href="#">Inst
+          <span class="visually-hidden">Inst</span>
+          <img src="img/insta-icon.svg" width="30" height="30" alt="Inst">
+        </a>
          </li>
        </ul>
       </section>
