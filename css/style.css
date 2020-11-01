@@ -45,15 +45,7 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+
 a {
   text-decoration: none;
 }
@@ -125,30 +117,9 @@ img {
   padding: 0 10px;
 
 }
-
-.page-catalog {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  align-content: start;
-
-}
-.shop-title {
+.main-title {
   font-size: 55px;
   line-height: 55px;
-}
-
-.page-shop{
-  display: grid;
-  grid-template-areas:
-    "aside catalog"
-  ;
-  grid-template-columns: 260px 1fr;
-  column-gap: : 140px;
-  margin-top: 35px;
-}
-
-.shop-filter {
-  grid-area: aside;
 }
 
 .services{
