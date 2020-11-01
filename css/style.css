@@ -26,9 +26,16 @@
     --dark-yellow: #E5A722;
 
 }
+.page {
+  height: 100%;
+}
+.page-body {
+  min-width: 100%;
 
-body {
-  min-width: 1440px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -38,7 +45,15 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 a {
   text-decoration: none;
 }
@@ -52,20 +67,35 @@ img {
   opacity: 0.2;
 }
 
-.main-navigation a{
+.main-navigation {
+  min-width: 100%;
   font-size: 16px;
   line-height: 30px;
-  color: var(--basic-black);
-  background-color: transparent;
+  background-color: var(--basic-light-gray)
 }
 
 .main-navigation-wrapper {
-  background-color: var(--basic-light-gray);
+  width: 1160px;
+  display: grid;
+
+  grid-template-columns: auto 1fr min-content;
+  margin: 0 auto;
+  padding: 0 10px;
+
 }
 
 .site-navigation {
+
+  color: var(--basic-black);
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  column-gap: 10px;
+  margin: 15px 30px;
+  padding: 0 200px;
   list-style: none;
+
 }
+
 
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-light-gray);
@@ -89,12 +119,55 @@ img {
 .user-basket a:active {
   border-bottom: 2px solid var(--light-pinkred);
 }
-.main-title {
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+}
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+
+}
+.shop-title {
   font-size: 55px;
   line-height: 55px;
 }
 
+.page-shop{
+  display: grid;
+  grid-template-areas:
+    "aside catalog"
+  ;
+  grid-template-columns: 260px 1fr;
+  column-gap: : 140px;
+  margin-top: 35px;
+}
 
+.shop-filter {
+  grid-area: aside;
+}
+
+.services{
+  margin-bottom: 95px;
+}
+.services-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .button {
   font: inherit;
   text-align: center;
@@ -158,37 +231,63 @@ img {
   color: inherit;
 }
 .carousel-list{
+  margin: 0;
+  padding: 0;
  list-style: none;
-
+}
+.carousel-item {
+  display: grid;
+  grid-template-columns: 400px 760px;
 }
 
-.carousel-title {
+.info-title {
   font-size: 55px;
   line-height: 55px;
 }
-.carousel-subtitle {
+.info-subtitle {
   font-size: 16px;
   line-height: 24px;
 }
 
-.features-title {
-  font-size: 24px;
-  line-height: 30px;
+.more-container{
+  display: grid;
+  grid-template-columns: 660px 360px;
 }
-.services ul {
-  list-style: none;
-}
+
 .description-title {
   font-size: 45px;
   line-height: 45px;
 }
 
+.description-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-item p::before{
+ content: url(../img/rectangle.svg);
+
+}
+
+
+.benefits-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 .numeral {
   font-size: 45px;
   line-height: 64px;
+
 }
 
 .percent {
+
   font-size: 26px;
   line-height: 40px;
 }
@@ -234,8 +333,19 @@ img {
   border-radius: 3px;
 }
 
+.partnership-list{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 42.5px;
+}
+
 .partnership-item{
   opacity: 0.2;
+  border-right: 1px solid;
+}
+.partnership-item:last-child{
+  border: none;
 }
 
 .partnership-item:hover{
@@ -251,12 +361,28 @@ img {
   line-height: 30px;
 }
 
+.footer-social{
+  display: grid;
+  grid-template-columns:  260px 660px;
+  column-gap: 140px;
+}
+.social-description {
+  order: 1;
+}
+
 .footer-title {
   font-size: 36px;
   line-height: 36px;
 }
+.footer-subtitle{
+ font-size: 16px;
+  line-height: 22px;
+}
+
 .social-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
 }
 .social-button {
     text-align: center;

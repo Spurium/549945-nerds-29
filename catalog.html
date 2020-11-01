@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
    <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
       </a>
-      <div class="main-navigation-wrapper">
-        <div class="main-container">
          <ul class="site-navigation">
           <li><a href="">Студия</a></li>
           <li><a href="">Клиенты</a></li>
@@ -22,13 +21,13 @@
           <li><a href="">Контакты</a></li>
          </ul>
          <div class="user-basket">
+          <img src="img/cart-icon.svg" width="15" height="11" alt="basket">
           <a class="basket" href="blank.html">Корзина</a>
          </div>
-        </div>
-       </div>
+      </div>
     </nav>
    </header>
-   <main class="container">
+   <main class="page-catalog container">
     <h1 class="main-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -41,10 +40,10 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image" src="img/img-sedona.jpg" width="358" height="576" alt="sedona">
+              <img class="catalog-item-image" src="img/img-sedona.jpg" width="358" height="576" alt="layout-sedona">
               <div class="preview">
                 <p class="preview-title">Sedona</p>
-                <p class="preview-subtitle">Информационный сайт для туристов</p>
+                <p class="preview-subtitle">Информационный сайт  для туристов</p>
                 <a class="button button-price" href="#">9 900 ₽</a>
               </div>
               </li>
@@ -52,10 +51,10 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image" src="img/img-pink.jpg" width="358" height="576" alt="pink">
+              <img class="catalog-item-image" src="img/img-pink.jpg" width="358" height="576" alt="layout-pink">
               <div class="preview">
                 <p class="preview-title">Pink App</p>
-                <p class="preview-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
+                <p class="preview-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="button button-price" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -64,10 +63,10 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image" src="img/img-barbershop.jpg" width="358" height="576" alt="borodinski">
+              <img class="catalog-item-image" src="img/img-barbershop.jpg" width="358" height="576" alt="layout-borodinski">
               <div class="preview">
                 <p class="preview-title">Barbershop</p>
-                <p class="preview-subtitle">Сайт салона красоты. Для мужчин, да.</p>
+                <p class="preview-subtitle">Сайт салона красоты.Для мужчин, да.</p>
                 <a class="button button-price" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -75,10 +74,10 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image" src="img/img-mishka.jpg" width="358" height="576" alt="mishka">
+              <img class="catalog-item-image" src="img/img-mishka.jpg" width="358" height="576" alt="layout-mishka">
               <div class="preview">
                 <p class="preview-title">MISHKA</p>
-                <p class="preview-subtitle">Интернет-магазин вязаных игрушек</p>
+                <p class="preview-subtitle">Интернет-магазин вязаных игрушек</p>
                 <a class="button button-price" href="#">9 900 ₽</a>
               </div>
 
@@ -87,7 +86,7 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image"  src="img/img-aplus.jpg" width="358" height="576" alt="aplus">
+              <img class="catalog-item-image"  src="img/img-aplus.jpg" width="358" height="576" alt="layout-aplus">
               <div class="preview">
                 <p class="preview-title">A Plus</p>
                 <p class="preview-subtitle">Лендинг курсов повышения квалификации</p>
@@ -98,10 +97,10 @@
               <span>
               <img src="img/browser.svg" width="360" height="40" alt="path">
               </span>
-              <img class="catalog-item-image" src="img/img-kvast.jpg" width="358" height="576" alt="kvast">
+              <img class="catalog-item-image" src="img/img-kvast.jpg" width="358" height="576" alt="layout-kvast">
               <div class="preview">
                 <p class="preview-title">КВАСТ</p>
-                <p class="preview-subtitle">Промо-сайт производителя крафтового кваса</p>
+                <p class="preview-subtitle">Промо-сайт производителя крафтового кваса</p>
                 <a class="button button-price" href="#">9 900 ₽</a>
               </div>
             </li>
@@ -114,45 +113,39 @@
           </ul>
       </section>
    </main>
-    <footer class="page-footer main-footer">
+   <footer class="page-footer main-footer">
      <section class="footer-contacts">
-      <div class="footer-conteiner">
        <h2 class="visually-hidden">Как нас найти</h2>
        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
        <p class="contacts-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.  <a class="footer-phone" href="tel: +78122757575"> +7 (812) 275-75-75</a></p>
        <a class="button button-red" href="#">Напишите нам</a>
-       </div>
-       <img class="footer-marker" src="img/map-marker.png" width="231" height="190" alt="marker">
-      </section>
-      <section class="footer-social">
+       <img src="img/map-marker.png" alt="marker">
+     </section>
+     <section class="footer-social">
+       <div class="social-description">
        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
        <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+       </div>
        <ul class="social-list">
          <li class="social-button">
-          <a href="#">
-            <span class="visually-hidden">Vk</span>
-            <img src="img/vk-icon.svg" width="30" height="30" alt="Vk">
-          </a>
+          <img class="social-image" src="img/vk-icon.svg" width="26" height="15" alt="Vk">
+          <a href="#">Vk</a>
          </li>
          <li class="social-button">
-          <a href="#">
-          <span class="visually-hidden">Fb</span>
-          <img src="img/fb-icon.svg" width="30" height="30" alt="Fb">
-        </a>
+          <img class="social-image" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
+          <a href="#">Fb</a>
          </li>
          <li class="social-button">
-          <a href="#">
-          <span class="visually-hidden">Inst</span>
-          <img src="img/insta-icon.svg" width="30" height="30" alt="Inst">
-        </a>
+          <img class="social-image" src="img/insta-icon.svg" width="21" height="21" alt="Inst">
+          <a href="#">Inst</a>
          </li>
        </ul>
-      </section>
-    </footer>
-   <section>
+     </section>
+   </footer>
+   <section class="modal">
   <h2>Напишите нам</h2>
   <!-- Здесь будет форма для связи -->
-  <button type="button">Отправить</button>
+  <button class="button features-button-red" type="button">Отправить</button>
 
 </section>
   </body>
