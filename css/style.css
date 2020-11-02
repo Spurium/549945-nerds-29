@@ -117,9 +117,44 @@ img {
   padding: 0 10px;
 
 }
-.main-title {
+.catalog-header{
+  background-color: var(--basic-light-gray);
+  padding-top: 55px;
+  padding-left: 55px;
+}
+
+.catalog-header-title {
+  text-align: center;
   font-size: 55px;
   line-height: 55px;
+}
+
+.catalog .container {
+  display: grid;
+  grid-template-areas:
+    "aside template";
+  grid-template-columns: 260px 1fr;
+  grid-gap: 140px;
+}
+
+.catalog-filters {
+  grid-area: aside;
+}
+
+.catalog-template {
+  grid-area: template;
+}
+.catalog-template-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  grid-row-gap: 25px;
+
+}
+.catalog-template-item {
+  background-color: var(--basic-light-gray);
+  text-align: center;
 }
 
 .services{
@@ -268,26 +303,24 @@ img {
   line-height: 18px;
 }
 
-.catalog-list {
-  list-style: none;
-}
-
-.pagination-list {
+.catalog-pagination-list {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 1fr;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
 }
 
-.pagination-item a {
+.catalog-pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-light-gray);
 }
 
-.pagination-item a:hover {
+.catalog-pagination-item a:hover {
   background-color: var(--medium-gray);
 }
 
-.pagination-item a:focus {
+.catalog-pagination-item a:focus {
   color: var(--special-black);
   background-color: var(--light-gray);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
