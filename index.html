@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic;display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style(flex).css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
    <header class="main-header">
@@ -35,7 +35,7 @@
             <div class="carousel-info">
             <p class="info-title">Долго, дорого,  скрупулезно.</p>
             <p class="info-subtitle">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="button button-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a class="button button-carousel" href="#">УЗНАТЬ БОЛЬШЕ</a>
             </div>
             <div class="carousel-decor">
             <img class="decor-image"  src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд с телефонами">
@@ -45,7 +45,7 @@
             <div class="carousel-info">
             <p class="info-title">Любим математику как никто другой</p>
             <p class="info-subtitle">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a class="button button-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a class="button button-carousel" href="#">УЗНАТЬ БОЛЬШЕ</a>
             </div>
             <div class="carousel-decor">
              <img class="decor-image" src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд с моноблоками" >
@@ -55,7 +55,7 @@
             <div class="carousel-info">
             <p class="info-title">Только ночь,<br>только хардкор</p>
             <p class="info-subtitle">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-            <a class="button button-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <a class="button button-carousel" href="#">УЗНАТЬ БОЛЬШЕ</a>
             </div>
             <div class="carousel-decor">
              <img class="decor-image" src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд с планшетом и телефоном">
@@ -164,11 +164,21 @@
    </main>
    <footer class="page-footer main-footer">
      <section class="footer-contacts">
+      <div class="container footer-contacts-container">
+       <div class="footer-contacts-box">
        <h2 class="visually-hidden">Как нас найти</h2>
        <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
-       <p class="contacts-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел.  <a class="footer-phone" href="tel: +78122757575"> +7 (812) 275-75-75</a></p>
-       <a class="button button-red" href="#">Напишите нам</a>
+       <p class="contacts-direction">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+       <p class="footer-phone">тел.
+        <a href="tel: +78122757575"> +7 (812) 275-75-75 </a>
+       </p>
+       <a class="button button-contacts" href="#">Напишите нам</a>
+       </div>
+       <div class="footer-contacts-marker">
        <img src="img/map-marker.png" alt="marker">
+       </div>
+     </div>
+     </div>
      </section>
      <section class="footer-social">
        <div class="social-description">
@@ -177,16 +187,22 @@
        </div>
        <ul class="social-list">
          <li class="social-button">
+          <a href="#"><a href="#">
+          <p class="visually-hidden">Vk</p>
           <img class="social-image" src="img/vk-icon.svg" width="26" height="15" alt="Vk">
-          <a href="#">Vk</a>
+          </a>
          </li>
          <li class="social-button">
-          <img class="social-image" src="img/fb-icon.svg" width="12" height="22" alt="Fb">
-          <a href="#">Fb</a>
+          <a href="#">
+          <p class="visually-hidden">Fb</p>
+          <img class="social-image" src="img/fb-icon.svg" width="26" height="15" alt="Fb">
+          </a>
          </li>
          <li class="social-button">
-          <img class="social-image" src="img/insta-icon.svg" width="21" height="21" alt="Inst">
-          <a href="#">Inst</a>
+          <a href="#">
+          <p class="visually-hidden">Inst</p>
+          <img class="social-image" src="img/insta-icon.svg" width="26" height="15" alt="Inst">
+          </a>
          </li>
        </ul>
      </section>
