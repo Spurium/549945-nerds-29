@@ -365,6 +365,8 @@ img {
 .more-container{
   display: flex;
   flex-direction: row;
+  padding-top: 39px;
+  padding-bottom: 55px;
 }
 
 .description {
@@ -372,37 +374,59 @@ img {
   margin-right: 149px;
 }
 .description-title {
-  width: 651px;
+  width: 660px;
+  font-weight: 500px;
   font-size: 45px;
   line-height: 45px;
 }
 
-.description-list{
+.description-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-item p{
+  position: relative;
+  padding-left: 32px;
 }
 
 .description-item p::before{
- content: url(../img/rectangle.svg);
-
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left: 0px;
+  background-color: red;
 }
 
+.benefits{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
 
 .benefits-list{
-  min-width: 360px;
-  min-height: 240px;
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+.benefits-item{
+  width: 120px;
+}
 
 .numeral {
+  font-weight: bold;
+  text-transform: uppercase;
   font-size: 45px;
   line-height: 64px;
+  color: var(--basic-black);
 
 }
 
@@ -415,6 +439,10 @@ img {
 }
 
 .benefits-title {
+  font-weight: bold;
+}
+
+.benefits-item-title {
   font-size: 16px;
   line-height: 18px;
 }
@@ -529,6 +557,7 @@ img {
     border-radius: 50%;
     margin-right: 9px;
 }
+
 
 .social-button:last-child {
   margin-right: 0;
