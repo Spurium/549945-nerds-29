@@ -303,21 +303,28 @@ img {
 .slide-2 {
     background-image: url(../img/nerds-index-slide2.png);
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: right 3px bottom 0;
 }
 
 .slide-3 {
-    background-image: url(../img/nerds-index-slide3.png));
+    background-image: url(../img/nerds-index-slide3.png);
     background-repeat: no-repeat;
-    background-position: 100%;
+    background-position: right 3px bottom 0;
 }
 
 .button-control-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 18px;
+  margin-left: -100px;
+  list-style: none;
+  text-align: center;
     position: absolute;
     width: 88px;
     height: 18px;
     left: 50%;
-    top: 75.4%;
+    top: 73%;
     margin: 0;
     padding: 0;
     transform: translateX(-50%);
@@ -336,7 +343,7 @@ img {
     margin-right: 0;
 }
 
-.button-control.active {
+.button-control.active-control {
     background-image: url(../img/ellipse-a.svg);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -646,10 +653,11 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 45px;
 }
 
-.filters-content li {
-  margin-bottom: 16px;
+.filters-content li:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .sorting-filters {
