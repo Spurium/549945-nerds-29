@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin,cyrillic;display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -32,8 +32,8 @@
         <h1 class="visually-hidden">Студия «Nerds»</h1>
         <ul class="carousel-list slide-1">
           <li class="carousel-item active">
-            <p class="carousel-item-title">Долго, дорого,  скрупулезно.</p>
-            <p class="carousel-item-subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <p class="carousel-item-title">Долго, дорого, скрупулезно.</p>
+            <p class="carousel-item-subtitle">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button button-carousel" href="#">УЗНАТЬ БОЛЬШЕ</a>
           </li>
           <li class="carousel-item">
@@ -129,7 +129,7 @@
         <div class="partnership-container">
         <ul class="partnership-list">
           <li class="partnership-item">
-            <a href="#">
+            <a href="https://htmlacademy.ru">
             <img src="img/html.png" width="199" height="68" alt="htmlacademy">
             </a>
           </li>
@@ -153,7 +153,7 @@
       </section>
      </div>
    </main>
-   <footer class="page-footer main-footer">
+  <footer class="page-footer main-footer">
      <section class="footer-contacts">
       <div class="container footer-contacts-container">
        <div class="footer-contacts-box">
@@ -163,13 +163,15 @@
        <p class="footer-phone">тел.
         <a href="tel: +78122757575"> +7 (812) 275-75-75 </a>
        </p>
-       <a class="button button-contacts" href="#">Напишите нам</a>
+       <a class="button button-contacts" href="#" id="btn-contact-modal">Напишите нам</a>
        </div>
        <div class="footer-contacts-marker">
        <img src="img/map-marker.png" alt="marker">
        </div>
      </div>
-     </div>
+      <div class="footer-contacts-map">
+     <img class="footer-contacts-img" src="img/map.png" width="1440" height="416" alt="Карта Санкт-Петербурга">
+      </div>
      </section>
      <section class="container footer-social">
        <div class="social-description">
@@ -178,7 +180,7 @@
        </div>
        <ul class="social-list">
          <li class="social-button">
-          <a href="#"><a href="#">
+          <a href="#">
           <span class="visually-hidden">Vk</span><svg width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" fill="#fff"/></svg>
           </a>
          </li>
@@ -195,11 +197,30 @@
        </ul>
      </section>
    </footer>
-   <section class="modal">
-  <h2>Напишите нам</h2>
-  <!-- Здесь будет форма для связи -->
-  <button class="button features-button-red" type="button">Отправить</button>
 
-</section>
+     <section id="contact-modal" class="modal-window">
+    <h2 class="visually-hidden">Форма для отправки контактов</h2>
+    <form class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <div class="fieldset-label">
+          <label class="label" for="name">Ваше имя:</label>
+          <input class="name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="fieldset-label">
+          <label class="label" for="email-field">Ваш email:</label>
+          <input class="email-user" id="email-field" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="fieldset-label">
+          <label class="label" for="text">Текст письма:</label>
+          <textarea name="text-label" id="text" rows="6" placeholder="В свободной форме"></textarea>
+        </div>
+      </fieldset>
+      <button class="button button-modal-window" type="submit" aria-label="Отправить форму"><span
+          class="button-shadow">Отправить</span></button>
+    </form>
+    <button class="modal-window-close" id="btn-close-modal" type="button" aria-label="Закрыть"></button>
+  </section>
+  <script src="js/script.js"></script>
   </body>
 </html>
