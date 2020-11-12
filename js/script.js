@@ -18,6 +18,9 @@ const slider = document.querySelector('.carousel');
 
 if (slider) {
   const carouselList = slider.querySelector('.carousel-list');
+  const carouselOne = slider.querySelector('.carousel-1');
+  const carouselTwo = slider.querySelector('.carousel-2');
+  const carouselThree = slider.querySelector('.carousel-3');
   const controlOne = slider.querySelector('.first');
   const controlTwo = slider.querySelector('.second');
   const controlThree = slider.querySelector('.third');
@@ -27,11 +30,14 @@ if (slider) {
 
     controlOne.classList.add('active-control');
     carouselList.classList.add('slide-1');
+    carouselOne.style.display = "block";
 
     controlTwo.classList.remove('active-control');
     carouselList.classList.remove('slide-2');
+    carouselTwo.style.display = "none";
     controlThree.classList.remove('active-control');
     carouselList.classList.remove('slide-3');
+    carouselThree.style.display = "none";
   });
 
   controlTwo.addEventListener('click', function (evt) {
@@ -39,11 +45,14 @@ if (slider) {
 
     controlTwo.classList.add('active-control');
     carouselList.classList.add('slide-2');
+    carouselTwo.style.display = "block";
 
     controlOne.classList.remove('active-control');
     carouselList.classList.remove('slide-1');
+    carouselOne.style.display = "none";
     controlThree.classList.remove('active-control');
     carouselList.classList.remove('slide-3');
+    carouselThree.style.display = "none";
   });
 
   controlThree.addEventListener('click', function (evt) {
@@ -51,11 +60,14 @@ if (slider) {
 
     controlThree.classList.add('active-control');
     carouselList.classList.add('slide-3');
+    carouselThree.style.display = "block";
 
     controlOne.classList.remove('active-control');
     carouselList.classList.remove('slide-1');
+    carouselOne.style.display = "none";
     controlTwo.classList.remove('active-control');
     carouselList.classList.remove('slide-2');
+    carouselTwo.style.display = "none";
   });
 
 }

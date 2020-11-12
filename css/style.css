@@ -371,7 +371,7 @@ img {
   margin-bottom: 27px;
 }
 .carousel-item-subtitle {
-  width: 400px;
+  width: 416px;
   letter-spacing: 0.2px;
   font-size: 16px;
   line-height: 25px;
@@ -518,18 +518,6 @@ img {
   line-height: 100%;
 }
 
-.btn {
-  display: inline-block;
-  padding: 15px 20px;
-  vertical-align: top;
-  text-decoration: none;
-  color: var(--basic-black);
-  border: none;
-  border-radius: 3px;
-  background-color: var(--basic-light-gray);
-  font-size: 16px;
-  line-height: 18px;
-}
 
 .button-grey {
   width: 260px;
